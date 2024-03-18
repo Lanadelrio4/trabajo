@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            font-family: 'Wor Sans', sans-serif ;
+        }
+        body {
+            background-image: linear-gradient(35deg, #8f7193, #e5dde6);
+        }
+        section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        section aside {
+            width: 350px;
+            padding: 20px;
+            background-color: #a788ab;
+            border-radius: 3px;
+            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0,5);
+        }
+        section aside h1{
+            font-size: 30px;
+            color: black;
+            text-align: center;
+        }
+        section aside h2{
+            font-size: 20px;
+            text-align: center;
+            margin: 10px 0;
+            color: black;
+            font-size: normal;
+        }
+        input [type=text],
+        input [type=password] {
+            width: calc(100% - 20px);
+            padding: 8px 10px;
+            font-size: 16px;
+            margin: 8px 0;
+            color: black;
+            background-color: aliceblue;
+            border: black solid 1px;
+            border-radius: 3px;
+            transition: 0.3s all cubic-bezier(017s, 0.885, 0.32, 1.275);
+        }
+        input [type=text]:focus,
+        input [type=password]:focus {
+            transform: scale(1.2);
+        }
+        button[type=submit]{
+            margin: 8px 0;
+            width: 100%;
+            border: none;
+            counter-reset: #fff;
+            background-color: #f15e64;
+            padding: 8px 0;
+            font-size: 18px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: 0.2s all ease-in-out;
+        }
+        button [type=submit]:hover {
+            background-color: azure;
+        }
+        section aside p {
+            font-size: 16px;
+            text-align: center;
+            margin-top: 10px;
+            color: #555;
+        }
+        select aside p a {
+            color: #f15e64;
+            text-decoration: underline;
+        }
+        select aside p a:hover{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <aside>
+            <h1>WELCOME!!</h1>
+            <h2>formulario De Registro</h2>
+            <form action="">
+                <input type="text" placeholder="name">
+                <input type="last name" placeholder="last name">
+                <input type="email" placeholder="email">
+                <input type="password" placeholder="password">
+                <button type="submit">ingresar</button>
+            </form>
+            <p>No puedes ingresar? <a href="">Reintentar</a></p>
+        </aside>
+    </section>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla</title>
+    <link type="text/css" rel="stylesheet" href="reset.css"/>
+    <style type="text/css">
+        body {
+            font: 11px Verdana, Geneva, Arial ;
+            padding: 15px;
+        }
+        a {
+            color: blueviolet;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        col{
+            width: 150px;
+        }
+        #Opciones{
+            width: 120px;
+        }
+        th, td{
+            padding: 5px;
+        }
+        thead tr{
+            border: 1px solid #ccc;
+        }
+        th{
+            font-weight: bold;
+        }
+        tbody tr :hover{
+            background-color: #e3b9e7
+        }
+        tr.impar{
+            background-color: rgb(179, 165, 189);
+        }
+        section aside h1{
+            font-size: 20px;
+            background-color: #efccf3;
+            text-align: center;
+        } 
+        section aside h3{
+            background-color: #efccf3;
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <aside>
+            <h1>Tabla De Información</h1>
+            <h3>Datos De Usuarios</h3>
+        </aside>
+    </section>
+    <table>
+        <colgroup>
+            <col id="Nombres"/>
+            <col id="Apellidos"/>
+            <col id="Dirección"/>
+            <col id="email"/>
+            <col id="Edad"/>
+            <col id="Estado Civil"/>
+            <col id="Numero De Identificación"/>
+            <col id="Opciones">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Dirección</th>
+                <th>email</th>
+                <th>Edad</th>
+                <th>Estado Civil</th>
+                <th>Numero De Identificación</th>
+                <th>Opciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="impar">
+                <td>Brandon Alfredo</td>
+                <td>Ruiz Sarabia</td>
+                <td>Circacia</td>
+                <td>Brandonruiz1289@gmail.com</td>
+                <td>19</td>
+                <td>Casado</td>
+                <td>1082638510</td>
+                <td>
+                    <a href="#">Mas Datos</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Jair Eleazar</td>
+                <td>Cordóba Lopez</td>
+                <td>Armenia</td>
+                <td>Jair_Lopez789@gmail.com</td>
+                <td>22</td>
+                <td>Soltero</td>
+                <td>1936493275</td>
+                <td>
+                    <a href="#">Mas Datos</a>
+                </td>
+            </tr>
+            <tr class="impar">
+                <td>Sara Camila</td>
+                <td>Marulanda Ocampo</td>
+                <td>Quimbaya</td>
+                <td>HelloKitty87345@gmail.com</td>
+                <td>16</td>
+                <td>Soltera</td>
+                <td>10852400268</td>
+                <td>
+                    <a href="#">Mas Datos</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
